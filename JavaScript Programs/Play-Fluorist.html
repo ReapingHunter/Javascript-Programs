@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const rosePrice = 8;
+        let roseQty = 70;
+        
+        const lilyPrice = 10;
+        let lilyQty = 50;
+
+        const tulipPrice = 2;
+        let tulipQty = 120;
+
+        let roseVal = rosePrice * roseQty;
+        let lilyVal = lilyPrice * lilyQty;
+        let tulipVal = tulipPrice * tulipQty;
+
+        let totalVal = roseVal + lilyVal + tulipVal;
+
+        console.log("Rose - unit price: ", rosePrice, " , quantity: ", roseQty, " , value: ", roseVal);
+        console.log("Lily - unit price: ", lilyPrice, " , quantity: ", lilyQty, " , value: ", lilyVal);
+        console.log("Tulip - unit price: ", tulipPrice, " , quantity: ", tulipQty, " , value: ", tulipVal);
+        console.log("Total: ", totalVal);
+
+        roseQty = roseQty - 20;
+        lilyQty = lilyQty - 30;
+        roseVal = rosePrice * roseQty;
+        lilyVal = lilyPrice * lilyQty;
+        tulipVal = tulipPrice * tulipQty;
+        totalVal = roseVal + lilyVal + tulipVal;
+
+        console.log("Rose - unit price: ", rosePrice, " , quantity: ", roseQty, " , value: ", roseVal);
+        console.log("Lily - unit price: ", lilyPrice, " , quantity: ", lilyQty, " , value: ", lilyVal);
+        console.log("Tulip - unit price: ", tulipPrice, " , quantity: ", tulipQty, " , value: ", tulipVal);
+        console.log("Total: ", totalVal);
+
+
+    </script>
+</body>
+</html>

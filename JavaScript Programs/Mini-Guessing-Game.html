@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tries;
+        let randNum = randomInt(1, 10);
+        var userNum = prompt("Enter a number: ");
+
+        userNum = Number(userNum);
+
+        for(tries = 0; tries < 2 && randNum != userNum; tries++){
+            userNum = (userNum > randNum)? prompt("Your guess was too high. Try again!") : prompt("Your guess was too low. Try again!");
+        }
+
+        (randNum != userNum) ? console.log(`Sorry. The number is ${randNum}.`) : console.log(`You got it! The number is ${randNum}.`);
+
+        function randomInt(min, max){
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min; 
+        }
+    </script>
+</body>
+</html>

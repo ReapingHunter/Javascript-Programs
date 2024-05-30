@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Question 1
+        let b1 = true;
+        let b2 = Boolean(false);
+
+        let n1 = 100;
+        let n2 = Number(200);
+
+        let s1 = "Man";
+        let s2 = String("Woman");
+
+        let big1 = 123n;
+        let big2 = BigInt(10200302993928833);
+
+        // Question 2
+        console.log(`${b1} [${typeof b1}]`);
+        console.log(`${b2} [${typeof b2}]`);
+        console.log(`${n1} [${typeof n1}]`);
+        console.log(`${n2} [${typeof n2}]`);
+        console.log(`${s1} [${typeof s1}]`);
+        console.log(`${s2} [${typeof s2}]`);
+        console.log(`${big1} [${typeof big1}]`);
+        console.log(`${big2} [${typeof big2}]`);
+
+        //Question 3
+        let convert = Boolean(BigInt(Number("12345")));
+        console.log(`${convert} : ${typeof convert}`);
+
+        //Question 4
+        let b = true + false;
+        let n = 100 + 200;
+        let bi = 100n + 200n;
+        let s = "He" + "llo";
+        let u = undefined + undefined;
+
+        console.log(`${b} [${typeof b}]`); // !!! number 
+        console.log(`${n} [${typeof n}]`);
+        console.log(`${bi} [${typeof bi}]`);
+        console.log(`${s} [${typeof s}]`);
+        console.log(`${u} [${typeof u}]`); // !!! number
+
+        //Question 6
+        const str1 = 42 + + "1";
+        console.log(str1);
+    </script>
+</body>
+</html>

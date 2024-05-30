@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Question 1
+        let ticket = {
+            from: "Berlin",
+            to: "Potsdam",
+            price: 11
+        };
+        console.log(ticket.from);
+        console.log(ticket.to);
+        console.log(ticket.price);
+
+        // Question 2
+        let person = {};
+        person.name = "The";
+        person.surname = "Keeper";
+        console.log(`${person.name} ${person.surname}`);
+
+        // Question 3
+        let books = [{
+            title: "Speaking JavaScript",
+            author: "Axel Rauschmayer",
+            numOfPages: 460
+        }, {
+            title: "Programming JavaScript Applications",
+            author: "Eric Elliott",
+            numOfPages: 254
+        }, {
+            title: "Understanding ECMAScript",
+            author: "Nicholas C. Zakas",
+            numOfPages: 6352
+        }];
+
+        // Question 4
+        let newBook = {
+            title: "Learning JavaScript Design Patterns",
+            author: "Addy Osmani",
+            numOfPages: 254
+        };
+
+        books.push(newBook);
+        console.log(books.length);
+        console.log(books[0]);
+        console.log(books[1]);
+        console.log(books[2]);
+        console.log(books[3]);
+
+        // Question 5
+        let selectedBooks = books.slice(-2);
+
+        // Question 6
+        books.shift();
+
+        console.log(books.length);
+        console.log(books[0]);
+        console.log(books[1]);
+        console.log(books[2]);
+
+        // Question 7
+        let sum = books[0].pages + books[1].pages + books[2].pages;
+        console.log(`pages: ${sum}`);
+        
+    </script>
+</body>
+</html>

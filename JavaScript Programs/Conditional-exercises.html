@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Question 1 & 2
+        let userPrompt = Number(prompt("Enter a number"));
+        let message = userPrompt > 90 && userPrompt < 110 ? "Bingo!" : "Miss";
+        alert(message);
+
+        // Question 3
+        let num1 = Number(prompt("Enter the 1st number"));
+        let num2 = Number(prompt("Enter the 2nd number"));
+        let op = prompt("Enter an operation");
+        let ans;
+
+        if(!Number.isNaN(num1) && !Number.isNaN(num2)){
+            switch(op){
+                case '+':
+                    ans = num1 + num2;
+                    break;
+                case '-':
+                    ans = num1 - num2;
+                    break;
+                case '*':
+                    ans = num1 * num2;
+                    break;
+                case '/':
+                    ans = num1 / num2;
+                    break;
+                default:
+                    ans = "Invalid Operand"
+            }
+        } else {
+            ans = "Number is invalid"
+        }
+        alert(ans);
+    </script>
+</body>
+</html>

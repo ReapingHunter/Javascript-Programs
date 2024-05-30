@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const str = String();
+        const num = Number();
+        const bool = Boolean();
+        
+        console.log(str); // ->
+        console.log(num); // -> 0
+        console.log(bool); // -> false
+        
+        const big1 = BigInt(42);
+        console.log(big1); // -> 42n
+        
+        const big2 = BigInt(); // -> Uncaught TypeError: Cannot convert undefined to a BigInt
+    </script>
+</body>
+</html>
